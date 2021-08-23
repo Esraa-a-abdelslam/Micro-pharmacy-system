@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Add users</title>
+</head>
+<body>
+
+
+<!-- Header start -->
+<div id="header"></div>
+<!-- Header end -->
+
+<div class="d-flex justify-content-center align-items-center container" style="height: 500px;">
+
+    <div class="row">
+
+        <form id="loginForm" class="p-4">
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input type="text" class="form-control inputField" id="name">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control inputField" id="password">
+            </div>
+
+            <button type="button" class="btn btn-dark col-sm-12 submitBtn" onclick="addUser()">Add user</button>
+
+        </form>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- footer start -->
+<div id="footer"></div>
+<!-- footer end -->
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+<script>
+    $(function () {
+        $('#header').load('../Templates/header.html');
+        $('#footer').load('../Templates/footer.html');
+    })
+</script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../JS/main.js"></script>
+
+
+</body>
+</html>

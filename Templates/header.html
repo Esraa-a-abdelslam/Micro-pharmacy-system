@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="myNav">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#">Pharma</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+
+
+                <li class="nav-item">
+                    <a class="nav-link navBarItem" href="Items.html">Items</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link navBarItem" href="Transaction.html">Transactions</a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navBarItem" href="#" id="navbarDropdownMenuUsers" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Manage Users
+                    </a>
+                    <div class="dropdown-menu menuOfDropDown" aria-labelledby="navbarDropdownMenuUsers">
+                        <a class="dropdown-item navBarItem" href="add_users.html" id="addUserLink">Add User</a>
+                        <a class="dropdown-item navBarItem" href="delete_users.html">Delete User</a>
+
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navBarItem" href="#" id="navbarDropdownMenuControl" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Username
+                    </a>
+                    <div class="dropdown-menu menuOfDropDown" aria-labelledby="navbarDropdownMenuControl">
+                        <a class="dropdown-item navBarItem" href="change_password.html">Change password</a>
+                        <a class="dropdown-item navBarItem" href="Index.html" onclick="logout()">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

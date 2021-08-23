@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Transaction</title>
+</head>
+<body>
+
+
+<!-- Header start -->
+<!--
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="myNav">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link navBarItem" href="#">Sell</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navBarItem" href="Buy.html">Buy</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navBarItem" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Username
+                    </a>
+                    <div class="dropdown-menu" id="menuOfDropDown" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item navBarItem" href="change_password.html">Change password</a>
+                        <a class="dropdown-item navBarItem" href="add_users.html"id="addUserLink">Add User</a>
+                        <a class="dropdown-item navBarItem" href="Index.html" id="logoutBtn">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+-->
+<div id="header"></div>
+<!-- Header end -->
+
+<div class="d-flex justify-content-center align-items-center container" style="height: 500px;">
+
+    <div class="row">
+
+        <form id="loginForm" class="p-4">
+
+            <div class="form-group">
+                <label>Customer Name</label>
+                <input type="text" class="form-control inputField" id="cstName">
+            </div>
+
+            <div class="form-group">
+                <label>Item Name</label>
+                <!--<input type="text" class="form-control inputField" id="itemName">-->
+                <select id="itemName" class="form-control inputField"></select>
+            </div>
+            <div class="form-group">
+                <label>Quantity</label>
+                <input type="number" class="form-control inputField" id="quantity">
+            </div>
+            <div class="form-group">
+                <label for="type">Transaction Type</label>
+                <select id="type" class="form-control inputField">
+                    <option value="0">Buy</option>
+                    <option value="1">Sell</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-dark col-sm-12 submitBtn" onclick="addTransaction()">Confirm</button>
+
+        </form>
+    </div>
+</div>
+
+
+<!-- footer start -->
+
+<div id="footer"></div>
+
+<!-- footer end -->
+
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+<script>
+    $(function () {
+        $('#header').load('../Templates/header.html');
+        $('#footer').load('../Templates/footer.html');
+    })
+</script>
+
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../JS/main.js"></script>
+
+
+</body>
+</html>
